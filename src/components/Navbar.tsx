@@ -5,6 +5,7 @@ function Navbar() {
     <header>
       <nav class="flex justify-between items-center  py-5 font-montserrat">
         <Motion.div
+          initial={{ opacity: 0 }}
           animate={{ x: [-100, 5, 0], opacity: [0, 1] }}
           transition={{ duration: 1, easing: "ease" }}
         >
@@ -17,6 +18,7 @@ function Navbar() {
         </Motion.div>
 
         <Motion.ul
+          initial={{ opacity: 0 }}
           animate={{ x: [100, -5, 0], opacity: [0, 1] }}
           transition={{ duration: 1, easing: "ease" }}
           class="navlink flex justify-between gap-x-4  text-base text-pWhite "

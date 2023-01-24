@@ -54,11 +54,11 @@ function Contact() {
           class=" h-36 py-2 px-3 focus:outline-none focus:border-0 text-white rounded text-xs sm:text-lg bg-[#2c1c4b]"
         ></textarea>
         <motion.button
-          //   whileTap={{
-          //     scale: 0.9,
-          //     backgroundColor: "#7f00ff",
-          //   }}
-          //   whileHover={{ scale: 1.1 }}
+          press={{
+            scale: 0.9,
+            backgroundColor: "#7f00ff",
+          }}
+          hover={{ scale: 1.1 }}
           onClick={(e) => {
             e.preventDefault();
           }}
@@ -89,10 +89,10 @@ const SocialButton = ({
   };
   return (
     <motion.button
-      //   whileTap={{
-      //     scale: 0.9,
-      //   }}
-      //   whileHover={animate}
+      press={{
+        scale: 0.9,
+      }}
+      hover={animate}
       class="text-[#8f20ff]  border-[#8f20ff] hover:border-[#7f00ff] hover:text-pWhite hover:bg-[#7f00ff] transition-colors duration-300 border-2 rounded-lg p-1 px-2 flex gap-x-2 items-center justify-between tracking-wider"
     >
       <span class="text-4xl">{icon}</span>

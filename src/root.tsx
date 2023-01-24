@@ -23,6 +23,8 @@ export default function Root() {
         <Title>Kratos-Portfolio</Title>
         <Meta charset="utf-8" />
         <Meta name="viewport" content="width=device-width, initial-scale=1" />
+        {/* favicon */}
+        <link rel="icon" href="/favicon.svg" />
       </Head>
       <Body class="gradient bg-pBlack ">
         <Suspense>

@@ -1,5 +1,6 @@
 // import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { Motion as motion } from "@motionone/solid";
+import { A } from "solid-start";
 import Github from "./icons/Github";
 import Instagram from "./icons/Instagram";
 import LinkedIn from "./icons/LinkedIn";
@@ -22,6 +23,7 @@ function Herosection() {
     <main class="border-b-[#ffffff55] border-b grid place-items-center  font-montserrat w-full text-center   h-full mt-5 py-7   text-white">
       <article>
         <motion.h1
+          initial={{ opacity: 0 }}
           animate={lower}
           transition={{
             duration: 0.2,
@@ -33,6 +35,7 @@ function Herosection() {
           Gaurav Bhandari
         </motion.h1>
         <motion.h2
+          initial={{ opacity: 0 }}
           animate={lower}
           transition={{
             duration: 0.2,
@@ -44,6 +47,7 @@ function Herosection() {
           Full Stack Developer
         </motion.h2>
         <motion.p
+          initial={{ opacity: 0 }}
           animate={upper}
           transition={{
             duration: 0.2,
@@ -60,6 +64,7 @@ function Herosection() {
           opportunities.
         </motion.p>
         <motion.p
+          initial={{ opacity: 0 }}
           animate={upper}
           transition={{
             duration: 0.2,
@@ -96,6 +101,7 @@ function Herosection() {
           up-to-date with the latest web development technologies and trends.
         </motion.p>
         <motion.div
+          initial={{ opacity: 0 }}
           animate={upper}
           transition={{
             duration: 0.2,
@@ -104,11 +110,18 @@ function Herosection() {
           }}
           class="text-4xl flex justify-center gap-x-4 mb-5 "
         >
-          <Github />
-          <Instagram />
-          <LinkedIn />
+          <A href="" target="_blank" rel="noopener">
+            <Github />
+          </A>
+          <A href="" target="_blank" rel="noopener">
+            <Instagram />
+          </A>
+          <A href="" target="_blank" rel="noopener">
+            <LinkedIn />
+          </A>
         </motion.div>
         <motion.div
+          initial={{ opacity: 0 }}
           animate={icon}
           transition={{
             duration: 0.2,

@@ -1,19 +1,18 @@
-/* @import "@fontsource/montserrat"; */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 html {
   scroll-behavior: smooth;
 }
+@font-face {
+  font-family: "Montserrat";
+  /* src: url("@fontsource/montserrat"); */
+}
 
 @layer components {
   .navlink > li {
     @apply hover:text-white relative transition-colors duration-200 after:absolute after:bottom-0 after:left-0 after:scale-0 hover:after:scale-100 after:transition-transform after:duration-200  after:w-full after:h-px after:bg-white hover:opacity-80;
   }
-}
-
-.enter {
-  transition-timing-function: cubic-bezier(0.6, 0.28, 0.735, 1.045);
 }
 
 .gradient {
@@ -35,6 +34,7 @@ html {
     #13111c;
   background-repeat: no-repeat;
 }
+
 .violetGrad {
   background: linear-gradient(
     76.35deg,

@@ -2,7 +2,7 @@ import { Motion as motion } from "@motionone/solid";
 import Heading from "./Heading";
 import Code from "./icons/Code";
 import Github from "./icons/Github";
-
+import Rocket from "./icons/Rocket";
 function Projects() {
   return (
     <section
@@ -14,26 +14,26 @@ function Projects() {
         title="Hackoverflow Society"
         secondaryText="Website"
         accentColor="purple"
-        imgLink="/hs.jpg"
+        imgLink="/hs.webp"
       />
       <ProjectCard
         title="RedWalls"
         secondaryText="Wallpaper App"
         accentColor="red"
-        imgLink="/redWallsHome.jpg"
+        imgLink="/redWallsHome.webp"
       />
 
       <ProjectCard
         title="Athena"
         secondaryText="Telegram Bot"
         accentColor="blue"
-        imgLink="/telegramBot.png"
+        imgLink="/telegramBot.webp"
       />
       <ProjectCard
         title="Arcane"
         secondaryText="Chat room"
         accentColor="arc"
-        imgLink="/arcane.png"
+        imgLink="/arcane.webp"
       />
       <div class="text-right text-sm sm:text-xl font-medium">
         and many
@@ -65,15 +65,11 @@ const ProjectCard = ({
   deploymentLink?: string;
   accentColor?: string;
 }) => {
-  const item = {
-    hidden: { opacity: 0 },
-    show: { opacity: 1 },
-  };
   return (
     <motion.section
       initial={{ opacity: 0, y: 50 }}
       inView={{ opacity: 1, y: 0 }}
-      inViewOptions={{ amount: 0.3 }}
+      inViewOptions={{ amount: 0.2 }}
       class={`mt-16 sm:mt-24  ${accentColor}`}
     >
       <h3 class="my-7 text-2xl sm:text-4xl font-semibold tracking-wider ">
@@ -108,9 +104,8 @@ const ProjectCard = ({
             class="flex  items-center justify-between   text-sm sm:text-3xl  gap-x-2 sm:gap-x-4 transition-colors projectHover"
           >
             <span class="text-sm sm:text-5xl text-pWhite  ">
-              <Github />
+              <Rocket />
             </span>
-            {/* <RxRocket class="text-sm sm:text-5xl text-pWhite  " /> */}
             Deployment
           </a>
         </div>

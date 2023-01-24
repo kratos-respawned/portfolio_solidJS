@@ -8,6 +8,7 @@ function Heading({ text, icon }: { text: string; icon?: JSXElement }) {
     if (!icon) return;
     scroll(animate(icon, { opacity: [1, 0], scale: [1, 2] }), {
       target: icon,
+      offset: ["end start", "start end"],
     });
   });
   return (

@@ -1,13 +1,13 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@fontsource/montserrat': ^4.5.14
   '@motionone/solid': ^10.15.5
   '@solidjs/meta': ^0.28.2
   '@solidjs/router': ^0.7.0
   autoprefixer: ^10.4.13
   motion: ^10.15.5
   postcss: ^8.4.21
-  react-icons: ^4.7.1
   solid-js: ^1.6.9
   solid-start: ^0.2.15
   solid-start-node: ^0.2.15
@@ -17,11 +17,11 @@ specifiers:
   vite: ^3.2.5
 
 dependencies:
+  '@fontsource/montserrat': 4.5.14
   '@motionone/solid': 10.15.5_solid-js@1.6.9
   '@solidjs/meta': 0.28.2_solid-js@1.6.9
   '@solidjs/router': 0.7.0_solid-js@1.6.9
   motion: 10.15.5
-  react-icons: 4.7.1
   solid-js: 1.6.9
   solid-start: 0.2.16_55umyvmfaswzxpylft3tvr3dvm
   undici: 5.16.0
@@ -1153,6 +1153,10 @@ packages:
     os: [linux]
     requiresBuild: true
     optional: true
+
+  /@fontsource/montserrat/4.5.14:
+    resolution: {integrity: sha512-fTvrteVzuFUePhr4QYBGoK8G/YHLJ3IhF1HhKg0AxcFvZajJT7rM7ULdmKLSd2PkX44R3aaFZq1zDbmjbGGI+w==}
+    dev: false
 
   /@hapi/hoek/9.3.0:
     resolution: {integrity: sha512-/c6rf4UJlmHlC9b5BaNvzAcFv7HZ2QHaV0D4/HNlBdvFnvQq8RI4kYdhyPCl7Xj+oWvTWQ8ujhqS53LIgAe6KQ==}
@@ -2667,12 +2671,6 @@ packages:
     resolution: {integrity: sha512-WuyALRjWPDGtt/wzJiadO5AXY+8hZ80hVpe6MyivgraREW751X3SbhRvG3eLKOYN+8VEvqLcf3wdnt44Z4S4SA==}
     engines: {node: '>=10'}
     dev: true
-
-  /react-icons/4.7.1:
-    resolution: {integrity: sha512-yHd3oKGMgm7zxo3EA7H2n7vxSoiGmHk5t6Ou4bXsfcgWyhfDKMpyKfhHR6Bjnn63c+YXBLBPUql9H4wPJM6sXw==}
-    peerDependencies:
-      react: '*'
-    dev: false
 
   /read-cache/1.0.0:
     resolution: {integrity: sha512-Owdv/Ft7IjOgm/i0xvNDZ1LrRANRfew4b2prF3OWMQLxLfu3bS8FVhCsrSCMK4lR56Y9ya+AThoTpDCTxCmpRA==}

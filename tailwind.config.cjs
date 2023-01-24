@@ -9,7 +9,7 @@ module.exports = {
         pWhite: "#f7f7f7",
       },
       fontFamily: {
-        montserrat: ["var(--font-montserrat)", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
       },
     },
   },

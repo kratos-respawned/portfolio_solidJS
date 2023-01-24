@@ -1,11 +1,12 @@
-import { A } from "solid-start";
-import Heading from "~/components/Heading";
 import Herosection from "~/components/Herosection";
+import Projects from "~/components/Project";
+import Skills from "~/components/Skills";
 export default function Home() {
   return (
     <>
       <Herosection />
-      <Heading text="Skills" />
+      <Skills />
+      <Projects />
     </>
   );
 }

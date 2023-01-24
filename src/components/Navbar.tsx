@@ -7,7 +7,7 @@ function Navbar() {
       <nav class="flex justify-between items-center  py-5 font-montserrat">
         <Motion.div
           animate={{ x: [-100, 5, 0], opacity: [0, 1] }}
-          transition={{ duration: 0.5, easing: "ease" }}
+          transition={{ duration: 1, easing: "ease" }}
         >
           <A
             href="/"
@@ -19,7 +19,7 @@ function Navbar() {
 
         <Motion.ul
           animate={{ x: [100, -5, 0], opacity: [0, 1] }}
-          transition={{ duration: 0.5, easing: "ease" }}
+          transition={{ duration: 1, easing: "ease" }}
           class="navlink flex justify-between gap-x-4  text-base text-pWhite "
         >
           <li>

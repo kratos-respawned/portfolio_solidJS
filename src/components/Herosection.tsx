@@ -1,6 +1,8 @@
 // import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { Motion as motion } from "@motionone/solid";
 import Github from "./icons/Github";
+import Instagram from "./icons/Instagram";
+import LinkedIn from "./icons/LinkedIn";
 function Herosection() {
   const container = {
     hidden: { opacity: 0 },
@@ -100,11 +102,18 @@ function Herosection() {
           intuitive user interfaces, and I'm always striving to learn and stay
           up-to-date with the latest web development technologies and trends.
         </motion.p>
-        <motion.div class="text-4xl flex justify-center gap-x-4 mb-5 ">
+        <motion.div
+          animate={upper}
+          transition={{
+            duration: 0.2,
+            easing: "ease",
+            delay: 0.6,
+          }}
+          class="text-4xl flex justify-center gap-x-4 mb-5 "
+        >
           <Github />
-          {/* <AiFillGithub class="hover:brightness-75 cursor-pointer" /> */}
-          {/* <AiFillInstagram class="hover:brightness-75 cursor-pointer" /> */}
-          {/* <AiFillLinkedin class="hover:brightness-75 cursor-pointer" /> */}
+          <Instagram />
+          <LinkedIn />
         </motion.div>
         <motion.div
           animate={icon}

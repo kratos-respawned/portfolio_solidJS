@@ -15,8 +15,10 @@
     "vite": "^3.2.5"
   },
   "dependencies": {
+    "@motionone/solid": "^10.15.5",
     "@solidjs/meta": "^0.28.2",
     "@solidjs/router": "^0.7.0",
+    "motion": "^10.15.5",
     "solid-js": "^1.6.9",
     "solid-start": "^0.2.15",
     "undici": "^5.15.1"

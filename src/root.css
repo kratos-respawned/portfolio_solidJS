@@ -1,3 +1,151 @@
+/* @import "@fontsource/montserrat"; */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+html {
+  scroll-behavior: smooth;
+}
+
+@layer components {
+  .navlink > li {
+    @apply hover:text-white relative transition-colors duration-200 after:absolute after:bottom-0 after:left-0 after:scale-0 hover:after:scale-100 after:transition-transform after:duration-200  after:w-full after:h-px after:bg-white hover:opacity-80;
+  }
+}
+
+.enter {
+  transition-timing-function: cubic-bezier(0.6, 0.28, 0.735, 1.045);
+}
+
+.gradient {
+  background: linear-gradient(
+      327.21deg,
+      rgba(33, 0, 75, 0.24) 3.65%,
+      rgba(60, 0, 136, 0) 40.32%
+    ),
+    linear-gradient(
+      245.93deg,
+      rgba(209, 21, 111, 0.16) 0%,
+      rgba(209, 25, 80, 0) 36.63%
+    ),
+    linear-gradient(
+      147.6deg,
+      rgba(58, 19, 255, 0) 29.79%,
+      rgba(98, 19, 255, 0.01) 85.72%
+    ),
+    #13111c;
+  background-repeat: no-repeat;
+}
+.violetGrad {
+  background: linear-gradient(
+    76.35deg,
+    rgb(128, 26, 230) 15.89%,
+    hsl(280, 80%, 50%) 89.75%
+  );
+  background-size: 100%;
+}
+/* selection */
+::selection {
+  background: rgb(124 58 237);
+  color: #fff;
+}
+::-moz-selection {
+  background: rgb(124 58 237);
+  color: #fff;
+}
+.skills > li {
+  list-style-image: linear-gradient(
+    76.35deg,
+    rgb(128, 26, 230) 15.89%,
+    hsl(280, 80%, 50%) 89.75%
+  );
+}
+.redBack {
+  background-clip: text;
+  background-position: 50%;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* ///////////////////////////////////////////////// */
+.red {
+  --g1: rgb(255, 81, 47);
+  --g2: rgb(221, 36, 118);
+  --color: rgb(255, 81, 47);
+}
+
+.purple {
+  --g1: rgb(225, 0, 255);
+  --g2: rgb(127, 0, 255);
+  --color: #7f00ff;
+}
+.blue {
+  --g1: rgb(91, 134, 229);
+  --g2: rgb(54, 209, 220);
+  --color: rgb(26, 175, 255);
+}
+.meta {
+  --g1: rgb(255, 81, 47);
+  --g2: #0072ff;
+  --color: rgb(255, 81, 47);
+  background: linear-gradient(to right);
+}
+.arc {
+  --g1: #037af0;
+  --g2: #0d41ff;
+  --color: #0575e6;
+}
+.projectText {
+  background-size: cover;
+  background: linear-gradient(to right, var(--g1), var(--g2));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.projectBorder {
+  border: 2px solid var(--color);
+}
+.projectHover:hover {
+  color: var(--color);
+}
+.projectButton {
+  color: var(--color);
+  position: relative;
+  border: 2px solid var(--color);
+  transition: border 200ms ease-in-out;
+}
+.projectButton > span {
+  width: 100%;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(to right, var(--g1), var(--g2));
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  transition: transform 200ms ease-in-out;
+}
+.projectButton:hover > span {
+  transform: translateX(0);
+}
+.projectButton:hover {
+  border: 2px solid transparent;
+}
+/* ///////////////////////////////////////////////// */
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #33323e;
+  border-radius: 10px;
+}
+/* selection */
+* {
+  -webkit-tap-highlight-color: transparent;
+}

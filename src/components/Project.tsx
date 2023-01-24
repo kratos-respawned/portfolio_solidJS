@@ -97,6 +97,8 @@ const ProjectCard = ({
             {githubLink && (
               <A
                 href={githubLink}
+                target="_blank"
+                rel="noopener"
                 class={`flex items-center justify-between  text-sm sm:text-3xl  gap-x-2 sm:gap-x-4 transition-colors projectHover`}
               >
                 <span class="text-sm sm:text-5xl text-pWhite  ">
@@ -108,6 +110,8 @@ const ProjectCard = ({
             {deploymentLink && (
               <A
                 href={deploymentLink}
+                target="_blank"
+                rel="noopener"
                 class="flex  items-center justify-between   text-sm sm:text-3xl  gap-x-2 sm:gap-x-4 transition-colors projectHover"
               >
                 <span class="text-sm sm:text-5xl text-pWhite  ">

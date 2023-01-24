@@ -1,6 +1,5 @@
 import { A } from "solid-start";
 import { Motion } from "@motionone/solid";
-import { spring } from "motion";
 function Navbar() {
   return (
     <header>

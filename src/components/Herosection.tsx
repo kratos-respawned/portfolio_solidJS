@@ -3,16 +3,8 @@ import { Motion as motion } from "@motionone/solid";
 import Github from "./icons/Github";
 import Instagram from "./icons/Instagram";
 import LinkedIn from "./icons/LinkedIn";
+
 function Herosection() {
-  const container = {
-    hidden: { opacity: 0 },
-    show: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1,
-      },
-    },
-  };
   const lower = {
     y: [-20, 0],
     opacity: [0, 1],
@@ -25,6 +17,7 @@ function Herosection() {
     scale: [0.5, 1],
     opacity: [0, 1],
   };
+
   return (
     <main class="border-b-[#ffffff55] border-b grid place-items-center  font-montserrat w-full text-center   h-full mt-5 py-7   text-white">
       <article>
